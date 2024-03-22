@@ -1,0 +1,27 @@
+{
+  "name": "hexo-shiki-twoslash",
+  "version": "1.0.43",
+  "license": "MIT",
+  "homepage": "https://github.com/shikijs/twoslash",
+  "repository": {
+    "url": "https://github.com/shikijs/twoslash.git",
+    "directory": "packages/hexo-shiki-twoslash",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/shikijs/twoslash/issues"
+  },
+  "description": "A Hexo plugin which adds shiki with optional twoslash-powered code samples",
+  "author": "Orta Therox",
+  "main": "./index.js",
+  "scripts": {
+    "bootstrap": "echo 'NOOP'",
+    "build": "pnpm exec tsc index.js --declaration --allowJs --emitDeclarationOnly  --target es2018 -moduleResolution node",
+    "test": "echo 'NOOP'",
+    "lint": "echo 'NOOP'"
+  },
+  "dependencies": {
+    "remark-shiki-twoslash": "3.1.7",
+    "typescript": ">3"
+  }
+}
